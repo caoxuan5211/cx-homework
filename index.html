@@ -5,27 +5,45 @@
 <title>环保</title>
 <style type="text/css">
 body,td,th {
-	color: rgba(21,237,21,1);
-	font-size: 36px;
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    color: rgba(21,237,21,1);
+    font-size: 36px;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 body {
-	background-image: url(
+    background-image: url(
 %E6%9C%89%E5%85%B3%E6%9D%90%E6%96%99/th%20(1).jpg);
-	background-repeat: repeat;
+    background-repeat: repeat;
 }
 a:link {
-	color: rgba(0,0,255,1);
+    color: rgba(0,0,255,1);
 }
 a:active {
-	color: rgba(255,0,0,1);
+    color: rgba(255,0,0,1);
 }
-	/* 为第一行第二列设置背景 */
+/* 为第一行第二列设置背景 */
 .first-row-second-column {
     background-image: url('cx560/image/OIP (1).jpg');
     background-size: cover; /* 背景图像覆盖整个单元格 */
     background-position: center; /* 背景图像居中 */
     background-repeat: no-repeat; /* 禁止背景图像重复 */
+}
+/* 新增按钮样式 */
+#backButton {
+    position: absolute; /* 定位按钮到页面右侧 */
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+#backButton:hover {
+    background-color: rgba(0, 128, 0, 1);
+}
 </style>
 </head>
 
@@ -43,5 +61,11 @@ a:active {
     </tr>
   </tbody>
 </table>
+
+<!-- 新增返回按钮 -->
+<button id="backButton" onclick="window.location.href='https://caoxuan5211.github.io/cs2402-211-homework/'">
+  返回
+</button>
+
 </body>
 </html>
